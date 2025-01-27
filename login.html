@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+</head>
+<body>
+    <section class="banner">
+    </section>
+    <div class="container">
+        <h1 class="main_heading">Login</h1>
+        <form id="loginForm">
+            <p>
+                <label for="name">Name: *</label>
+                <input type="text" placeholder="Enter your name" class="Name" id="name" required>
+            </p>
+            <p>
+                <label for="pincode">Pincode: *</label>
+                <input type="number" name="Pincode" id="pincode" required placeholder="Enter your pincode">
+            </p>
+            <p>
+                <button type="button" class="btn" onclick="validateForm()">Login</button>
+            </p>
+        </form>
+    </div>
+
+    <script>
+        function validateForm() {
+            const name = document.getElementById("name").value.trim();
+            const pincode = document.getElementById("pincode").value.trim();
+
+            if (name === "" || pincode === "") {
+                alert("Please fill out both fields.");
+            } else {
+                
+                window.location.href = "main.html";
+            }
+        }
+    </script>
+</body>
+</html>
