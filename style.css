@@ -125,7 +125,7 @@
     top:490px
 }
 .sec-p1{
-    padding: 40px 80px;
+    padding: 40px 40px;
     background-color: rgb(240, 255, 254);
 }
 #feature{
@@ -146,6 +146,10 @@
 } 
 #feature .fe-box:hover{
     box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.164);
+}
+a{
+    text-decoration: none;
+    color: black;
 }
 #product1 .latest-product{
     display: flex;
@@ -205,3 +209,22 @@
     bottom: 10px;
 }
 
+@media screen and (max-width: 768px) {
+    .tagline{
+        font-size: 10px;
+        position: relative;
+        left: -50px;
+        top: -160px;
+        width: 300px;
+    }
+    .logo{
+        width: 0px;
+    }
+    #feature .fe-box:hover{
+        font-size: 20px;
+        margin: 30px;
+    }
+    .fe-box{
+        margin: 10px;
+    }
+}

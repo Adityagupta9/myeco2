@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: sans-serif;
     margin: 0;
     font-size: 18px;
     color: #333;
@@ -24,7 +24,7 @@ body {
 }
 
 .container {
-    width: 30%;
+    width: 400px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -42,7 +42,7 @@ body {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
-    color: #444;
+    color: #444444;
 }
 
 input[type="text"], input[type="number"], input[type="password"] {
@@ -55,7 +55,7 @@ input[type="text"], input[type="number"], input[type="password"] {
 }
 
 button.btn {
-    background-color: #444;
+    rgba(255, 235, 235, 0.826)
     color: #fff;
     padding: 12px;
     border: none;
